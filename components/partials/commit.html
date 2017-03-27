@@ -1,0 +1,14 @@
+<button type="button" ng-click="firstStep()">Ready to start?</button>
+
+<section ng-if="userReady">
+  <p>Once again, the first thing we will do is check our status. I know we have checked the status quite a bit so far, but it is always better to know what is going on than be left guessing.</p>
+
+  <p>Notice upon checking the status, we get a message that says "On branch master" followed by "Initial Commit" and then "Changes to be commited:...". Git is always giving us hints for what we need to do next. Since we don't want to remove the files we have added to the staging area, let's skip to actually making our first commit!</p>
+
+  <p>In order to commit our changes, we need to run the command: 'git commit -m "Some message"'. It is important to remember we need to add the '-m' flag and then a message in quotations. In this example, we ran 'git commit -m "first commit"', which creates a commit titled 'first commit'. If successful, you should get some response that files were changed and some modes were created.</p>
+
+  <p>Note: if you run 'git status' right now, it will say "On branch master, nothing to commit, working directory clean".</p>
+
+  <p>Let's move on to the next step, creating a repository.</p>
+  <img ng-src="{{commit}}">
+</section>

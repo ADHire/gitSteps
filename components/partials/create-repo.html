@@ -1,0 +1,14 @@
+<button type="button" ng-click="firstStep()">Ready to start?</button>
+
+<section ng-if="userReady">
+  <p>In your browser, navigate to <a href="https://www.github.com">GitHub</a> and sign in.</p>
+
+  <p>On the main page, you will see two large buttons: "Read the Guide" and "Start a Project" - go ahead and click "Start a Project". This will take you to a page that has a few fields to type into and some other options further down.</p>
+
+  <p>For demonstration purposes, we only typed into the "Repository Name" field. We didn't give a description, didn't check the private, or play with any of the other options below that.</p>
+
+  <p>Once you have typed in a repository name, go ahead and click  the green button below: "Create Repository"</p>
+
+  <p>Only three steps to go, you've got this!</p>
+  <img ng-src="{{createRepo}}">
+</section>

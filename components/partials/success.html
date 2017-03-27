@@ -1,0 +1,9 @@
+<button type="button" ng-click="firstStep()">Ready to start?</button>
+
+<section ng-if="userReady">
+  <p>Once that has completed, go back to your browser and refresh the page. Your browser should display something similar to what is in the picture. It will show you your files in the repository that is now on <a href="https://www.github.com">GitHub.com</a>!</p>
+
+  <p>Congratulations, you have pushed your first repository.</p>
+  
+  <img ng-src="{{success}}">
+</section>

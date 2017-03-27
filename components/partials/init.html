@@ -1,0 +1,10 @@
+<button type="button" ng-click="firstStep()">Ready to start?</button>
+
+<section ng-if="userReady">
+  <p>The first thing we need to do is use the terminal(sometimes called a command prompt) to navigate to the directory that our project is in. In this example, you can see the terminal's working directory is called: githubTest</p>
+
+  <p>Once we have found the directory that our project is in, the first step will be running a command: git init . This will initialize the directory as a working Git repository.</p>
+
+  <p>Take note, upon a successful 'git init' command, there will be output in the terminal that says: 'Initalized empty Git repository in...' followed by the path to your project. Once this step has been completed, you will be able to proceed to the next step.</p>
+  <img ng-src="{{gitInit}}">
+</section>

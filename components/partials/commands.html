@@ -1,0 +1,11 @@
+<button type="button" ng-click="firstStep()">Ready to start?</button>
+
+<section ng-if="userReady">
+  <p>Swap back over to your terminal, and paste what you had copied. Don't worry about pasting twice, your terminal/command prompt will automatically run the first command that has been pasted, then it will require you to press "ENTER" to submit the second command.</p>
+
+  <p>Once you press "ENTER" to submit that second line, you <strong>may</strong> or <strong>may not</strong> be prompted for your GitHub username/password. Please remember that when prompted for your password, it may seem like you aren't typing because there will be no input shown. This is a security check so others cannot see your password as it is being typed in.</p>
+
+  <p>Once you submit your username and password, you should be seeing a bunch of output from your terminal. It will be a long list containing things such as: 'Counting Objects', 'Delta Compression', 'Writing Objects', and some other cool things.</p>
+  
+  <img ng-src="{{commands}}">
+</section>

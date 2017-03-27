@@ -2,21 +2,53 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Test</title>
+    <!-- <link rel="stylesheet" href="./components/css/main.css"> -->
+    <title>Git Step by Step</title>
   </head>
-  <body>
+  <body ng-app="gitMod">
 
-    <ul>
-      <li><img src="images/gitInit.png"></li>
-      <li><img src="images/gitStatusBeforeAdd.png"></li>
-      <li><img src="images/gitAddgitStatus.png"></li>
-      <li><img src="images/gitCommit.png"></li>
-      <li><img src="images/repoCreate.png"></li>
-      <li><img src="images/addRemotePushToOrigin.png"></li>
-      <li><img src="images/pasteCommands.png"></li>
-      <li><img src="images/yaySuccess.png"></li>
-    </ul>
+    <h4>Quick Git lesson!</h4>
+
+    <div>
+      <ul>
+        <li><a href="#!/init">Step One - Git Init</a></li>
+        <li><a href="#!/before">Step Two - Git Status</a></li>
+        <li><a href="#!/add">Step Three - Git Add</a></li>
+        <li><a href="#!/commit">Step Four - Git Commit</a></li>
+        <li><a href="#!/repo">Step Five - Create Repository</a></li>
+        <li><a href="#!/remoteadd">Step Six - Add remote origins</a></li>
+        <li><a href="#!/selectcommands">Step Seven - Paste/Type Options</a></li>
+        <li><a href="#!/yay">Step Eight - Celebrate!</a></li>
+        <li><a href="#!/changes">Made Some Changes?</a></li>
+      </ul>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <ng-view></ng-view>
+
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
+      <script src="./components/scripts/app/git-module.js"></script>
+      <!-- <script src="./components/scripts/controllers/git-controller.js"></script> -->
+      <script src="components/scripts/controllers/add-origin.js"></script>
+      <script src="components/scripts/controllers/commands.js"></script>
+      <script src="components/scripts/controllers/commit.js"></script>
+      <script src="components/scripts/controllers/create-repo.js"></script>
+      <script src="components/scripts/controllers/init.js"></script>
+      <script src="components/scripts/controllers/status-add.js"></script>
+      <script src="components/scripts/controllers/status-before.js"></script>
+      <script src="components/scripts/controllers/success.js"></script>
 
   </body>
 </html>

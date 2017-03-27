@@ -1,0 +1,18 @@
+<button type="button" ng-click="firstStep()">Ready to start?</button>
+
+<section ng-if="userReady">
+  <p>Now that we have checked our status and need to add files to tracking, let's run through two ways to do this.</p>
+
+  <ul>
+    <li>The first way is by typing: 'git add filename' This will add a single file.</li>
+    <li>The second way is by typing: 'git add .' This will add *ALL* files within that directory to tracking.</li>
+  </ul>
+
+  <p>There is no right or wrong way, some people prefer typing their filenames out one by one, others prefer just adding all of them at once. Notice in the example below, we used "git add ." to add all the files at once. Once we ran that command, we get a message saying that LF will be replaced by CRLF in index.html. Don't worry too much about that for now.</p>
+
+  <p>Lets go ahead and check out repository's status by running: 'git status'. Notice something different now? That's right, the files are no longer in a red font color. All of your added files are in a green font color now. This means that a file is staged.</p>
+
+  <p>Let's move on to the next step, commiting!</p>
+
+  <img ng-src="{{statusAfter}}">
+</section>
