@@ -4,7 +4,7 @@ app.config(function($routeProvider) {
   $routeProvider
     .when('/', {
       controller: 'ultimateController',
-      templateUrl: './components/partials/home.html'
+      templateUrl: './components/partials/init.html'
     })
     .when('/init', {
       controller: 'ultimateController',
