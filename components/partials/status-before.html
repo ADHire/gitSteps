@@ -1,12 +1,43 @@
-<button type="button" ng-click="firstStep()">Ready to start?</button>
+<div class="container-fluid">
 
-<section ng-if="userReady">
-  <p>Once 'git init' has been ran, you may have noticed there is an invisible folder in the directory now called '.git'. This folder will track this project's changes. We will talk about that later...</p>
+  <div class="row">
+    <div class="col-xs-6">
+      <p>Once </kbd>git init</kbd> has been ran, you may have noticed there is an invisible folder in the directory now called <u>.git</u>. This folder will track this project's changes. We will talk about that later...</p>
 
-  <p>The next step, and one that we constantly will be doing, is to check the status of this local repository. To do this, we will use the command: 'git status'.</p>
+      <p>The next step, and one that we constantly will be doing, is to check the status of this local repository. To do this, we will use the command: <kbd>git status</kbd>.</p>
 
-  <p>When running this command, the terminal will give some output. It will say "Untracked Files:" and list some files in a red or green font color. We will touch on the details at a later time. The biggest thing to notice is that all of the files within your directory should be listed here.</p>
+      <p>When running this command, the terminal will give some output. It will say: <samp>Untracked Files:</samp> and list some files in a <span class="text-danger">red</span> or <span class="text-success">green</span> font color. We will touch on the details at a later time. The biggest thing to notice is that all of the files within your directory should be listed here and gives you another hint on what to do next...<samp>nothing added to commit but untracked files present (use "git add" to track)</samp></p>
 
-  <p>In order for Git to allow us to commit or push these files, we need to add them to tracking. That is our next step!</p>
-  <img ng-src="{{statusBefore}}">
-</section>
+      <p>In order for <b>Git</b> to allow us to commit or push these files, we need to add them to tracking. That is our next step!</p>
+    </div>
+    <div class="col-xs-6">
+      <img class="img-responsive" ng-src="{{statusBefore}}">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6 commands">
+      <p>Commands used so far:</p>
+      <ul>
+        <li><kbd>git init</kdb></li>
+        <li><kbd>git status</kdb></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous"><a href="#!/init">Step 1</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+
+          <li class="next"><a href="#!/add">Step 3</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</div>

@@ -1,5 +1,23 @@
-li {
-  list-style: none;
+.heading {
   text-align: center;
-  margin-bottom: 50px;
+}
+
+.content {
+  margin-top: 5%;
+}
+
+.navvv {
+  border: 1px solid black;
+}
+
+.nav li {
+  border: 1px solid grey;
+}
+
+.commands {
+  text-align: center;
+}
+
+.commands ul li {
+  display: inline;  
 }

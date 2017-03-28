@@ -1,9 +1,40 @@
-<button type="button" ng-click="firstStep()">Ready to start?</button>
+<div class="container-fluid">
 
-<section ng-if="userReady">
-  <p>Once that has completed, go back to your browser and refresh the page. Your browser should display something similar to what is in the picture. It will show you your files in the repository that is now on <a href="https://www.github.com">GitHub.com</a>!</p>
+  <div class="row">
+    <div class="col-xs-6">
+      <p>Once that has completed, go back to your browser and refresh the page. Your browser should display something similar to what is in the picture. It will show you your files in the repository that is now on <a href="https://www.github.com">GitHub.com</a>!</p>
 
-  <p>Congratulations, you have pushed your first repository.</p>
-  
-  <img ng-src="{{success}}">
-</section>
+      <p><b>Congratulations, you have pushed your first repository.</b></p>
+    </div>
+    <div class="col-xs-6">
+      <img class="img-responsive" ng-src="{{success}}">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6 commands">
+      <p>Commands used so far:</p>
+      <ul>
+        <li><kbd>git init</kdb></li>
+        <li><kbd>git status</kdb></li>
+        <li><kbd>git add</kdb></li>
+        <li><kbd>git commit</kdb></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous"><a href="#!/selectcommands">Step 7</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="next"><a href="#!/changes">One last thing...</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</div>

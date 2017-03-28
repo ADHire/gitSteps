@@ -2,53 +2,66 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- <link rel="stylesheet" href="./components/css/main.css"> -->
+    <link rel="stylesheet" href="./components/css/bootstrap.css">
+    <link rel="stylesheet" href="./components/css/main.css">
     <title>Git Step by Step</title>
   </head>
   <body ng-app="gitMod">
 
-    <h4>Quick Git lesson!</h4>
+    <div class="container-fluid">
 
-    <div>
-      <ul>
-        <li><a href="#!/init">Step One - Git Init</a></li>
-        <li><a href="#!/before">Step Two - Git Status</a></li>
-        <li><a href="#!/add">Step Three - Git Add</a></li>
-        <li><a href="#!/commit">Step Four - Git Commit</a></li>
-        <li><a href="#!/repo">Step Five - Create Repository</a></li>
-        <li><a href="#!/remoteadd">Step Six - Add remote origins</a></li>
-        <li><a href="#!/selectcommands">Step Seven - Paste/Type Options</a></li>
-        <li><a href="#!/yay">Step Eight - Celebrate!</a></li>
-        <li><a href="#!/changes">Made Some Changes?</a></li>
-      </ul>
+      <div class="row">
+        <div class="col-xs-12 heading">
+          <h2>Guide To Your First Git Repository</h2>
+          <small>version 0.0.5</small>
+        </div>
+      </div>
 
-
-
-
-
-
-
-
+      <div class="row content">
+        <div class="col-xs-2 navvv">
+          <nav>
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="#!/init">Step One - Git Init</a></li>
+              <li><a href="#!/before">Step Two - Git Status</a></li>
+              <li><a href="#!/add">Step Three - Git Add</a></li>
+              <li><a href="#!/commit">Step Four - Git Commit</a></li>
+              <li><a href="#!/repo">Step Five - Create Repository</a></li>
+              <li><a href="#!/remoteadd">Step Six - Add remote origins</a></li>
+              <li><a href="#!/selectcommands">Step Seven - Paste/Type Options</a></li>
+              <li><a href="#!/yay">Step Eight - Celebrate!</a></li>
+              <li><a href="#!/changes">Made Some Changes?</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-xs-8">
+          <ng-view></ng-view>
+        </div>
+      </div>
 
     </div>
 
-    <ng-view></ng-view>
 
 
 
 
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
-      <script src="./components/scripts/app/git-module.js"></script>
-      <!-- <script src="./components/scripts/controllers/git-controller.js"></script> -->
-      <script src="components/scripts/controllers/add-origin.js"></script>
-      <script src="components/scripts/controllers/commands.js"></script>
-      <script src="components/scripts/controllers/commit.js"></script>
-      <script src="components/scripts/controllers/create-repo.js"></script>
-      <script src="components/scripts/controllers/init.js"></script>
-      <script src="components/scripts/controllers/status-add.js"></script>
-      <script src="components/scripts/controllers/status-before.js"></script>
-      <script src="components/scripts/controllers/success.js"></script>
+
+
+
+
+    <script src="./components/scripts/lib/jquery-2.2.4.min.js"></script>
+    <script src="./components/scripts/lib/angular.min.js"></script>
+    <script src="./components/scripts/lib/angular-route.min.js"></script>
+    <script src="./components/scripts/lib/angular-animate.js"></script>
+    <script src="./components/scripts/lib/bootstrap.min.js"></script>
+    <script src="./components/scripts/app/git-module.js"></script>
+    <script src="./components/scripts/controllers/add-origin.js"></script>
+    <script src="./components/scripts/controllers/commands.js"></script>
+    <script src="./components/scripts/controllers/commit.js"></script>
+    <script src="./components/scripts/controllers/create-repo.js"></script>
+    <script src="./components/scripts/controllers/init.js"></script>
+    <script src="./components/scripts/controllers/status-add.js"></script>
+    <script src="./components/scripts/controllers/status-before.js"></script>
+    <script src="./components/scripts/controllers/success.js"></script>
 
   </body>
 </html>

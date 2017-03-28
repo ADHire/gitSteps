@@ -1,11 +1,42 @@
-<button type="button" ng-click="firstStep()">Ready to start?</button>
+<div class="container-fluid">
 
-<section ng-if="userReady">
-  <p>Once you create that repository, you will be greeted with this screen. we know it looks scary, but we will get through this together.</p>
+  <div class="row">
+    <div class="col-xs-6">
+      <p>Once you create that repository, you will be greeted with this screen. we know it looks scary, but we will get through this together.</p>
 
-  <p>A little more than halfway down, there will be an option that says: <strong>"...or push an existing repository from the command line"</strong> which will have two lines of code under it.</p>
+      <p>A little more than halfway down, there will be an option that says: <samp>"...or push an existing repository from the command line"</samp> which will have two lines of code under it.</p>
 
-  <p>Just like the picture shows, you can either copy BOTH of those lines of code, or you can simply click on the COPY button located on the right-hand side of the option box.</p>
+      <p>Just like the picture shows, you can either <u><b>BOTH</b></u> of those lines of code, or you can simply click on the COPY icon located on the right-hand side of that option's container.</p>
+    </div>
+    <div class="col-xs-6">
+      <img class="img-responsive" ng-src="{{remoteadd}}">
+    </div>
+  </div>
 
-  <img ng-src="{{remoteadd}}">
-</section>
+  <div class="row">
+    <div class="col-xs-6 commands">
+      <p>Commands used so far:</p>
+      <ul>
+        <li><kbd>git init</kdb></li>
+        <li><kbd>git status</kdb></li>
+        <li><kbd>git add</kdb></li>
+        <li><kbd>git commit</kdb></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous"><a href="#!/repo">Step 5</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="next"><a href="#!/selectcommands">Step 7</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</div>

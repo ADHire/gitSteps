@@ -1,11 +1,42 @@
-<button type="button" ng-click="firstStep()">Ready to start?</button>
+<div class="container-fluid">
 
-<section ng-if="userReady">
-  <p>Swap back over to your terminal, and paste what you had copied. Don't worry about pasting twice, your terminal/command prompt will automatically run the first command that has been pasted, then it will require you to press "ENTER" to submit the second command.</p>
+  <div class="row">
+    <div class="col-xs-6">
+      <p>Swap back over to your terminal, and paste what you had copied. Don't worry about pasting twice, your terminal/command prompt will automatically run the first command that has been pasted, then it will require you to press <kbd>ENTER</kbd> to submit the second command.</p>
 
-  <p>Once you press "ENTER" to submit that second line, you <strong>may</strong> or <strong>may not</strong> be prompted for your GitHub username/password. Please remember that when prompted for your password, it may seem like you aren't typing because there will be no input shown. This is a security check so others cannot see your password as it is being typed in.</p>
+      <p>Once you press <kbd>ENTER</kbd> to submit that second line, you <b><u>may</u></b> or <b><u>may not</u></b> be prompted for your <b>GitHub</b> username/password. <u>Please remember that when prompted for your password, it may seem like you aren't typing because there will be no input shown.</u> This is a security check so others cannot see your password as it is being typed in.</p>
 
-  <p>Once you submit your username and password, you should be seeing a bunch of output from your terminal. It will be a long list containing things such as: 'Counting Objects', 'Delta Compression', 'Writing Objects', and some other cool things.</p>
-  
-  <img ng-src="{{commands}}">
-</section>
+      <p>Once you submit your username and password, you should be seeing a bunch of output from your terminal. It will be a long list containing things such as: <samp>'Counting Objects'<samp>, <samp>'Delta Compression'</samp>, <samp>'Writing Objects'</samp>, and some other cool things.</p>
+    </div>
+    <div class="col-xs-6">
+      <img class="img-responsive" ng-src="{{commands}}">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6 commands">
+      <p>Commands used so far:</p>
+      <ul>
+        <li><kbd>git init</kdb></li>
+        <li><kbd>git status</kdb></li>
+        <li><kbd>git add</kdb></li>
+        <li><kbd>git commit</kdb></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous"><a href="#!/remoteadd">Step 6</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="next"><a href="#!/yay">Step 8</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</div>

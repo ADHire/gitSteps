@@ -2,6 +2,10 @@ var app = angular.module('gitMod', ['ngRoute']);
 
 app.config(function($routeProvider) {
   $routeProvider
+    .when('/', {
+      controller: 'initController',
+      templateUrl: './components/partials/home.html'
+    })
     .when('/init', {
       controller: 'initController',
       templateUrl: './components/partials/init.html'
@@ -37,6 +41,7 @@ app.config(function($routeProvider) {
     .when('/changes', {
       controller: 'yayController',
       templateUrl: './components/partials/changes.html'
-    });
+    })
+    .otherwise({ redirectTo: '/' });
 
 })

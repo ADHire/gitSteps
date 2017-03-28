@@ -1,14 +1,46 @@
-<button type="button" ng-click="firstStep()">Ready to start?</button>
+<div class="container-fluid">
 
-<section ng-if="userReady">
-  <p>Once again, the first thing we will do is check our status. I know we have checked the status quite a bit so far, but it is always better to know what is going on than be left guessing.</p>
+  <div class="row">
+    <div class="col-xs-6">
+      <p>Once again, the first thing we will do is check our repository's status. I know we have checked the status quite a bit so far, but it is always better to know what is going on than be left guessing.</p>
 
-  <p>Notice upon checking the status, we get a message that says "On branch master" followed by "Initial Commit" and then "Changes to be commited:...". Git is always giving us hints for what we need to do next. Since we don't want to remove the files we have added to the staging area, let's skip to actually making our first commit!</p>
+      <p>Notice upon checking the status, we get a message that says: <samp>On branch master</samp> followed by: <samp>Initial Commit</samp> and then: <samp>Changes to be commited:...</samp>. <b>Git</b> is always giving us hints for what we need to do next. Since we don't want to remove the files we have added to the staging area, let's skip to actually making our first commit!</p>
 
-  <p>In order to commit our changes, we need to run the command: 'git commit -m "Some message"'. It is important to remember we need to add the '-m' flag and then a message in quotations. In this example, we ran 'git commit -m "first commit"', which creates a commit titled 'first commit'. If successful, you should get some response that files were changed and some modes were created.</p>
+      <p>In order to commit our changes, we need to run the command: <kbd>git commit -m "Some message"</kbd>. It is important to remember we need to add the </kbd>-m</kbd> flag and then a message in quotations. In this example, we ran <kbd>git commit -m "first commit"</kbd>, which creates a commit titled <em>'first commit'</em>. If successful, you should get some response that files were changed and some modes were created.</p>
 
-  <p>Note: if you run 'git status' right now, it will say "On branch master, nothing to commit, working directory clean".</p>
+      <p>Lets go ahead and check out the repository's status by running our trusty <kbd>git status</kbd>. Notice something different now? That's right, the files are no longer in a <span class="text-danger">red</span> font color. All of your added files are in a <span class="text-success">green</span> font color now. When files are <span class="text-success">green</span>, it means that it is staged.</p>
 
-  <p>Let's move on to the next step, creating a repository.</p>
-  <img ng-src="{{commit}}">
-</section>
+      <p>Note: if you run <kbd>git status</kbd> right now, it will say: <samp>On branch master, nothing to commit, working directory clean</kbd>.</p>
+    </div>
+    <div class="col-xs-6">
+      <img class="img-responsive" ng-src="{{commit}}">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6 commands">
+      <p>Commands used so far:</p>
+      <ul>
+        <li><kbd>git init</kdb></li>
+        <li><kbd>git status</kdb></li>
+        <li><kbd>git add</kdb></li>
+        <li><kbd>git commit</kdb></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous"><a href="#!/add">Step 3</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="next"><a href="#!/repo">Step 5</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</div>

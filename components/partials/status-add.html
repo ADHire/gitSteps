@@ -1,18 +1,46 @@
-<button type="button" ng-click="firstStep()">Ready to start?</button>
+<div class="container-fluid">
 
-<section ng-if="userReady">
-  <p>Now that we have checked our status and need to add files to tracking, let's run through two ways to do this.</p>
+  <div class="row">
+    <div class="col-xs-6">
+      <p>Now that we have checked our status and need to add files to tracking, let's run through two ways to do this.</p>
 
-  <ul>
-    <li>The first way is by typing: 'git add filename' This will add a single file.</li>
-    <li>The second way is by typing: 'git add .' This will add *ALL* files within that directory to tracking.</li>
-  </ul>
+      <ul>
+        <li>The first way is by typing: <kbd>git add <var>FILENAME</var></kbd>. This will add a single file. You can add multiple files in this way by separating each file with a single space.</li>
+        <li>The second way is by typing: <kbd>git add .</kbd> This will add <b>ALL</b> files within that directory to tracking.</li>
+      </ul>
 
-  <p>There is no right or wrong way, some people prefer typing their filenames out one by one, others prefer just adding all of them at once. Notice in the example below, we used "git add ." to add all the files at once. Once we ran that command, we get a message saying that LF will be replaced by CRLF in index.html. Don't worry too much about that for now.</p>
+      <p>Once we ran that command, we get a message saying that <samp>warning: LF will be replaced by CRLF in...</samp> all of the files you have added. Don't worry too much about that for now, it isn't broken.</p>
 
-  <p>Lets go ahead and check out repository's status by running: 'git status'. Notice something different now? That's right, the files are no longer in a red font color. All of your added files are in a green font color now. This means that a file is staged.</p>
+      <p>Lets go ahead and check out the repository's status by running our trusty <kbd>git status</kbd>. Notice something different now? That's right, the files are no longer in a <span class="text-danger">red</span> font color. All of your added files are in a <span class="text-success">green</span> font color now. When files are <span class="text-success">green</span>, it means that it is staged.</p>
+    </div>
+    <div class="col-xs-6">
+      <img class="img-responsive" ng-src="{{statusAfter}}">
+    </div>
+  </div>
 
-  <p>Let's move on to the next step, commiting!</p>
+  <div class="row">
+    <div class="col-xs-6 commands">
+      <p>Commands used so far:</p>
+      <ul>
+        <li><kbd>git init</kdb></li>
+        <li><kbd>git status</kdb></li>
+        <li><kbd>git add</kdb></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous"><a href="#!/before">Step 2</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="next"><a href="#!/commit">Step 4</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-  <img ng-src="{{statusAfter}}">
-</section>
+</div>

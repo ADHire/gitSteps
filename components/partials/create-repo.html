@@ -1,14 +1,44 @@
-<button type="button" ng-click="firstStep()">Ready to start?</button>
+<div class="container-fluid">
 
-<section ng-if="userReady">
-  <p>In your browser, navigate to <a href="https://www.github.com">GitHub</a> and sign in.</p>
+  <div class="row">
+    <div class="col-xs-6">
+      <p>In your browser, navigate to <a href="https://www.github.com">GitHub</a> and sign in.</p>
 
-  <p>On the main page, you will see two large buttons: "Read the Guide" and "Start a Project" - go ahead and click "Start a Project". This will take you to a page that has a few fields to type into and some other options further down.</p>
+      <p>On the main page, you will see two large buttons: <button class="btn btn-success">Read the Guide</button> and <button class="btn">Start a Project</button> - go ahead and click <button class="btn">Start a Project</button>. This will take you to a page that has a few fields to type into and some other options further down.</p>
 
-  <p>For demonstration purposes, we only typed into the "Repository Name" field. We didn't give a description, didn't check the private, or play with any of the other options below that.</p>
+      <p>For demonstration purposes, we only typed into the <samp>Repository Name</samp> field. We didn't give a description, didn't check the private, or play with any of the other options below that.</p>
 
-  <p>Once you have typed in a repository name, go ahead and click  the green button below: "Create Repository"</p>
+      <p>Once you have typed in a repository name, go ahead and click <button class="btn btn-success">Create Repository</button></p>
+    </div>
+    <div class="col-xs-6">
+      <img class="img-responsive" ng-src="{{createRepo}}">
+    </div>
+  </div>
 
-  <p>Only three steps to go, you've got this!</p>
-  <img ng-src="{{createRepo}}">
-</section>
+  <div class="row">
+    <div class="col-xs-6 commands">
+      <p>Commands used so far:</p>
+      <ul>
+        <li><kbd>git init</kdb></li>
+        <li><kbd>git status</kdb></li>
+        <li><kbd>git add</kdb></li>
+        <li><kbd>git commit</kdb></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous"><a href="#!/commit">Step 4</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="next"><a href="#!/remoteadd">Step 6</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</div>

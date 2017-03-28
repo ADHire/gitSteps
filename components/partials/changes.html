@@ -1,15 +1,48 @@
-<button type="button" ng-click="firstStep()">Ready to start?</button>
+<div class="container-fluid">
 
-<section ng-if="userReady">
-  <p>During development, you will never be done writing code or making changes. The beautiful part is that if you have made any changes to your project, all we need to do is revisit a few commands...</p>
+  <div class="row">
+    <div class="col-xs-6">
+      <p>During development, you will never be done writing code or making changes. The beautiful part is that if you have made any changes to your project, all we need to do is revisit a few commands...</p>
 
-  <ul>
-    <li>git status</li>
-    <li>git add</li>
-    <li>git commit -m "Some commit message"</li>
-    <li>git push</li>
-  </ul>
+      <ul>
+        <li><kbd>git status</kbd></li>
+        <li><kbd>git add</kbd></li>
+        <li><kbd>git commit -m "Some commit message"</kbd></li>
+        <li><kbd>git push</kbd></li>
+      </ul>
 
-  <p>Those four commands will check your status, add your files to tracking, make a new commit, and then push those changes to <a href="https://www.github.com">GitHub.com</a></p>
+      <p>Those four commands will check your status, add your files to tracking, make a new commit, and then push those changes to <a href="https://www.github.com">GitHub.com</a></p>
+    </div>
+    <div class="col-xs-6">
+      <img class="img-responsive" ng-src="{{success}}">
+    </div>
+  </div>
 
-</section>
+  <div class="row">
+    <div class="col-xs-6 commands">
+      <p>Commands used so far:</p>
+      <ul>
+        <li><kbd>git init</kdb></li>
+        <li><kbd>git status</kdb></li>
+        <li><kbd>git add</kdb></li>
+        <li><kbd>git commit</kdb></li>
+        <li><kbd>git push</kdb></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous"><a href="#!/yay">Step 7</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-xs-3">
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="next"><a href="#!/home">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</div>
