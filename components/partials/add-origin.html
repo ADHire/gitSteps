@@ -9,7 +9,7 @@
       <p>Just like the picture shows, you can either <u><b>BOTH</b></u> of those lines of code, or you can simply click on the COPY icon located on the right-hand side of that option's container.</p>
     </div>
     <div class="col-xs-6">
-      <img class="img-responsive" ng-src="{{remoteadd}}">
+      <img class="img-responsive pop-modal" ng-src="{{steps.addRemote}}">
     </div>
   </div>
 
@@ -36,6 +36,15 @@
           <li class="next"><a href="#!/selectcommands">Step 7</a></li>
         </ul>
       </nav>
+    </div>
+  </div>
+
+
+  <div class="modal fade img-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img ng-src="{{steps.addRemote}}">
+      </div>
     </div>
   </div>
 

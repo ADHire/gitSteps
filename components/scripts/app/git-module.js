@@ -3,43 +3,43 @@ var app = angular.module('gitMod', ['ngRoute']);
 app.config(function($routeProvider) {
   $routeProvider
     .when('/', {
-      controller: 'initController',
+      controller: 'ultimateController',
       templateUrl: './components/partials/home.html'
     })
     .when('/init', {
-      controller: 'initController',
+      controller: 'ultimateController',
       templateUrl: './components/partials/init.html'
     })
     .when('/before', {
-      controller: 'beforeController',
+      controller: 'ultimateController',
       templateUrl: './components/partials/status-before.html'
     })
     .when('/add', {
-      controller: 'addController',
+      controller: 'ultimateController',
       templateUrl: './components/partials/status-add.html'
     })
     .when('/commit', {
-      controller: 'commitController',
+      controller: 'ultimateController',
       templateUrl: './components/partials/commit.html'
     })
     .when('/repo', {
-      controller: 'repoController',
+      controller: 'ultimateController',
       templateUrl: './components/partials/create-repo.html'
     })
     .when('/remoteadd', {
-      controller: 'remoteAddController',
+      controller: 'ultimateController',
       templateUrl: './components/partials/add-origin.html'
     })
     .when('/selectcommands', {
-      controller: 'optionsController',
+      controller: 'ultimateController',
       templateUrl: './components/partials/commands.html'
     })
     .when('/yay', {
-      controller: 'yayController',
+      controller: 'ultimateController',
       templateUrl: './components/partials/success.html'
     })
     .when('/changes', {
-      controller: 'yayController',
+      controller: 'ultimateController',
       templateUrl: './components/partials/changes.html'
     })
     .otherwise({ redirectTo: '/' });

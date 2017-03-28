@@ -13,7 +13,7 @@
       <p>Note: if you run <kbd>git status</kbd> right now, it will say: <samp>On branch master, nothing to commit, working directory clean</kbd>.</p>
     </div>
     <div class="col-xs-6">
-      <img class="img-responsive" ng-src="{{commit}}">
+      <img class="img-responsive pop-modal" ng-src="{{steps.gitCommit}}">
     </div>
   </div>
 
@@ -40,6 +40,14 @@
           <li class="next"><a href="#!/repo">Step 5</a></li>
         </ul>
       </nav>
+    </div>
+  </div>
+
+  <div class="modal fade img-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img ng-src="{{steps.gitCommit}}">
+      </div>
     </div>
   </div>
 

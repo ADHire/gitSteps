@@ -14,7 +14,7 @@
       <p>Lets go ahead and check out the repository's status by running our trusty <kbd>git status</kbd>. Notice something different now? That's right, the files are no longer in a <span class="text-danger">red</span> font color. All of your added files are in a <span class="text-success">green</span> font color now. When files are <span class="text-success">green</span>, it means that it is staged.</p>
     </div>
     <div class="col-xs-6">
-      <img class="img-responsive" ng-src="{{statusAfter}}">
+      <img class="img-responsive pop-modal" ng-src="{{steps.statusAdd}}">
     </div>
   </div>
 
@@ -40,6 +40,14 @@
           <li class="next"><a href="#!/commit">Step 4</a></li>
         </ul>
       </nav>
+    </div>
+  </div>
+
+  <div class="modal fade img-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img ng-src="{{steps.statusAdd}}">
+      </div>
     </div>
   </div>
 

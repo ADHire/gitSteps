@@ -11,7 +11,7 @@
       <p>Once you have typed in a repository name, go ahead and click <button class="btn btn-success">Create Repository</button></p>
     </div>
     <div class="col-xs-6">
-      <img class="img-responsive" ng-src="{{createRepo}}">
+      <img class="img-responsive pop-modal" ng-src="{{steps.repoCreate}}">
     </div>
   </div>
 
@@ -38,6 +38,14 @@
           <li class="next"><a href="#!/remoteadd">Step 6</a></li>
         </ul>
       </nav>
+    </div>
+  </div>
+
+  <div class="modal fade img-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img ng-src="{{steps.repoCreate}}">
+      </div>
     </div>
   </div>
 

@@ -7,7 +7,7 @@
       <p><b>Congratulations, you have pushed your first repository.</b></p>
     </div>
     <div class="col-xs-6">
-      <img class="img-responsive" ng-src="{{success}}">
+      <img class="img-responsive pop-modal" ng-src="{{steps.yay}}">
     </div>
   </div>
 
@@ -34,6 +34,14 @@
           <li class="next"><a href="#!/changes">One last thing...</a></li>
         </ul>
       </nav>
+    </div>
+  </div>
+
+  <div class="modal fade img-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img ng-src="{{steps.yay}}">
+      </div>
     </div>
   </div>
 

@@ -11,7 +11,7 @@
       <p>In order for <b>Git</b> to allow us to commit or push these files, we need to add them to tracking. That is our next step!</p>
     </div>
     <div class="col-xs-6">
-      <img class="img-responsive" ng-src="{{statusBefore}}">
+      <img class="img-responsive pop-modal" ng-src="{{steps.statusBefore}}">
     </div>
   </div>
 
@@ -37,6 +37,14 @@
           <li class="next"><a href="#!/add">Step 3</a></li>
         </ul>
       </nav>
+    </div>
+  </div>
+
+  <div class="modal fade img-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img ng-src="{{steps.statusBefore}}">
+      </div>
     </div>
   </div>
 

@@ -1,8 +1,14 @@
 var app = angular.module('gitMod');
 
-app.controller('gitController', function($scope) {
+app.controller('ultimateController', function($scope) {
 
-  $scope.userReady = false;
+  $('.pop-modal').on('mouseenter', function() {
+    $(this).css({'cursor': 'pointer'});
+  }).on('mouseleave', function() {
+    $(this).css({'cursor': 'default'});
+  }).on('click', function() {
+    $('.modal').modal('show');
+  });
 
   $scope.steps = {
     gitInit: "./components/images/gitInit.png",
@@ -14,11 +20,5 @@ app.controller('gitController', function($scope) {
     paste: "./components/images/pasteCommands.png",
     yay: "./components/images/yaySuccess.png"
   };
-
-  $scope.firstStep = function() {
-    $scope.userReady = true;
-  };
-
-  console.log($scope.steps);
 
 });
