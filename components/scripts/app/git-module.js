@@ -1,4 +1,4 @@
-var app = angular.module('gitMod', ['ngRoute']);
+var app = angular.module('gitMod', ['ngRoute', 'ngAnimate']);
 
 app.config(function($routeProvider) {
   $routeProvider
