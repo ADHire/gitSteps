@@ -1,18 +1,13 @@
-<div class="container-fluid">
+<div class="git-content">
 
-  <div class="row">
-    <div class="col-xs-6">
+  <main>
+    <div>
       <p>Once that has completed, go back to your browser and refresh the page. Your browser should display something similar to what is in the picture. It will show you your files in the repository that is now on <a href="https://www.github.com">GitHub.com</a>!</p>
 
       <p><b>Congratulations, you have pushed your first repository.</b></p>
     </div>
-    <div class="col-xs-6">
-      <img class="img-responsive pop-modal" ng-src="{{steps.yay}}">
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-6 commands">
+    <div class="commands">
       <p>Commands used so far:</p>
       <ul>
         <li><kbd>git init</kdb></li>
@@ -21,28 +16,10 @@
         <li><kbd>git commit</kdb></li>
       </ul>
     </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="previous"><a href="#!/selectcommands">Step 7</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="next"><a href="#!/changes">One last thing...</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+  </main>
 
-  <div class="modal fade img-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <img ng-src="{{steps.yay}}">
-      </div>
-    </div>
+  <div class="img-block">
+    <img class="img-responsive pop-modal" ng-src="{{steps.yay}}">
   </div>
 
 </div>

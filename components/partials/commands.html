@@ -1,20 +1,15 @@
-<div class="container-fluid">
+<div class="git-content">
 
-  <div class="row">
-    <div class="col-xs-6">
+  <main>
+    <div>
       <p>Swap back over to your terminal, and paste what you had copied. Don't worry about pasting twice, your terminal/command prompt will automatically run the first command that has been pasted, then it will require you to press <kbd>ENTER</kbd> to submit the second command.</p>
 
       <p>Once you press <kbd>ENTER</kbd> to submit that second line, you <b><u>may</u></b> or <b><u>may not</u></b> be prompted for your <b>GitHub</b> username/password. <u>Please remember that when prompted for your password, it may seem like you aren't typing because there will be no input shown.</u> This is a security check so others cannot see your password as it is being typed in.</p>
 
-      <p>Once you submit your username and password, you should be seeing a bunch of output from your terminal. It will be a long list containing things such as: <samp>'Counting Objects'<samp>, <samp>'Delta Compression'</samp>, <samp>'Writing Objects'</samp>, and some other cool things.</p>
+      <p>Once you submit your username and password, you should be seeing a bunch of output from your terminal. It will be a long list containing things such as: <samp>'Counting Objects'</samp>, <samp>'Delta Compression'</samp>, <samp>'Writing Objects'</samp>and some other cool things.</p>
     </div>
-    <div class="col-xs-6">
-      <img class="img-responsive pop-modal" ng-src="{{steps.paste}}">
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-6 commands">
+    <div class="commands">
       <p>Commands used so far:</p>
       <ul>
         <li><kbd>git init</kdb></li>
@@ -23,28 +18,10 @@
         <li><kbd>git commit</kdb></li>
       </ul>
     </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="previous"><a href="#!/remoteadd">Step 6</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="next"><a href="#!/yay">Step 8</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+  </main>
 
-  <div class="modal fade img-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <img ng-src="{{steps.paste}}">
-      </div>
-    </div>
+  <div class="img-block">
+    <img ng-src="{{steps.paste}}">
   </div>
 
 </div>

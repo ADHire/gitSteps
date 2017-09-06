@@ -1,48 +1,27 @@
-<div class="container-fluid">
+<div class="git-content">
 
-  <div class="row">
-    <div class="col-xs-6">
-      <p>The first thing we need to do is use the terminal(sometimes called a command prompt) to navigate to the directory that our project is in. In this example, you can see the terminal's working directory is: <samp>C:\Users\meow\Desktop\githubTest</samp></p>
+  <main>
+    <div>
+      <p>The first thing we need to do is use the terminal(often called a command prompt in Windows) to navigate to the directory that our project is in. In this example, you can see the terminal's working directory is: <samp>C:\Users\meow\Desktop\githubTest</samp></p>
 
       <p>Once we have found the directory that our project is in, the first step will be using a command called <kbd>git init</kbd>. This will initialize the directory as a working Git repository.</p>
 
       <p>Take note, upon a successful <kbd>git init</kbd>, there will be output in the terminal that says: <samp>Initalized empty Git repository in </samp> followed by the path to your project. Once this step has been completed, you will be able to proceed to the next step.</p>
     </div>
-    <div class="col-xs-6">
-      <img class="img-responsive pop-modal" ng-src="{{steps.gitInit}}">
 
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-6 commands">
+    <div class="commands">
       <p>Commands used so far:</p>
       <ul>
         <li><kbd>git init</kdb></li>
       </ul>
     </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="previous"><a href="#!/">Home</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="next"><a href="#!/before">Step 2</a></li>
-        </ul>
-      </nav>
-    </div>
+  </main>
+
+
+  <div class="img-block">
+    <img ng-src="{{steps.gitInit}}">
   </div>
 
-  <div class="modal fade img-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <img ng-src="{{steps.gitInit}}">
-      </div>
-    </div>
-  </div>
+
 
 </div>

@@ -1,7 +1,7 @@
-<div class="container-fluid">
+<div class="git-content">
 
-  <div class="row">
-    <div class="col-xs-6">
+  <main>
+    <div>
       <p>During development, you will never be done writing code or making changes. The beautiful part is that if you have made any changes to your project, all we need to do is revisit a few commands...</p>
 
       <ul>
@@ -13,13 +13,8 @@
 
       <p>Those four commands will check your status, add your files to tracking, make a new commit, and then push those changes to <a href="https://www.github.com">GitHub.com</a></p>
     </div>
-    <div class="col-xs-6">
-      <img class="img-responsive pop-modal" ng-src="{{steps.yay}}">
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-6 commands">
+    <div class="commands">
       <p>Commands used so far:</p>
       <ul>
         <li><kbd>git init</kdb></li>
@@ -29,28 +24,10 @@
         <li><kbd>git push</kdb></li>
       </ul>
     </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="previous"><a href="#!/yay">Step 7</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="next"><a href="#!/home">Home</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-
-  <div class="modal fade img-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <img ng-src="{{steps.yay}}">
-      </div>
-    </div>
+  </main>
+  
+  <div class="img-block">
+    <img ng-src="{{steps.yay}}">
   </div>
 
 </div>

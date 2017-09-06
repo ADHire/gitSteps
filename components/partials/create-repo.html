@@ -1,23 +1,18 @@
-<div class="container-fluid">
+<div class="git-content">
 
-  <div class="row">
-    <div class="col-xs-6">
+  <main>
+    <div>
       <p>In your browser, navigate to <a href="https://www.github.com">GitHub</a> and sign in.</p>
 
       <p>On the main page, you will see two large buttons: <button class="btn btn-success">Read the Guide</button> and <button class="btn">Start a Project</button> - go ahead and click <button class="btn">Start a Project</button>. This will take you to a page that has a few fields to type into and some other options further down.</p>
 
       <p>For demonstration purposes, we only typed into the <samp>Repository Name</samp> field. We didn't give a description, didn't check the private, or play with any of the other options below that.</p>
 
-      <p><strong>DO NOT CHECK</strong> "<samp>Initialize this repository with a README</samp>". If you have already done this, delete the repository in the settings tab and recreate it.</p>
+      <p><strong>DO NOT CHECK</strong> <samp>Initialize this repository with a README</samp>. If you have already done this, delete the repository in the settings tab and recreate it.</p>
 
       <p>Once you have typed in a repository name, go ahead and click <button class="btn btn-success">Create Repository</button></p>
     </div>
-    <div class="col-xs-6">
-      <img class="img-responsive pop-modal" ng-src="{{steps.repoCreate}}">
-    </div>
-  </div>
 
-  <div class="row">
     <div class="col-xs-6 commands">
       <p>Commands used so far:</p>
       <ul>
@@ -27,28 +22,10 @@
         <li><kbd>git commit</kdb></li>
       </ul>
     </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="previous"><a href="#!/commit">Step 4</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="next"><a href="#!/remoteadd">Step 6</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+  </main>
 
-  <div class="modal fade img-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <img ng-src="{{steps.repoCreate}}">
-      </div>
-    </div>
+  <div class="img-block">
+    <img ng-src="{{steps.repoCreate}}">
   </div>
 
 </div>

@@ -1,7 +1,7 @@
-<div class="container-fluid">
+<div class="git-content">
 
-  <div class="row">
-    <div class="col-xs-6">
+  <main>
+    <div>
       <p>Now that we have checked our status and need to add files to tracking, let's run through two ways to do this.</p>
 
       <ul>
@@ -12,14 +12,10 @@
       <p>Once we ran that command, we get a message saying that <samp>warning: LF will be replaced by CRLF in...</samp> all of the files you have added. Don't worry too much about that for now, it isn't broken.</p>
 
       <p>Lets go ahead and check out the repository's status by running our trusty <kbd>git status</kbd>. Notice something different now? That's right, the files are no longer in a <span class="text-danger">red</span> font color. All of your added files are in a <span class="text-success">green</span> font color now. When files are <span class="text-success">green</span>, it means that it is staged.</p>
-    </div>
-    <div class="col-xs-6">
-      <img class="img-responsive pop-modal" ng-src="{{steps.statusAdd}}">
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-6 commands">
+    </div>
+
+    <div class="commands">
       <p>Commands used so far:</p>
       <ul>
         <li><kbd>git init</kdb></li>
@@ -27,28 +23,11 @@
         <li><kbd>git add</kdb></li>
       </ul>
     </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="previous"><a href="#!/before">Step 2</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="next"><a href="#!/commit">Step 4</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+  </main>
 
-  <div class="modal fade img-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <img ng-src="{{steps.statusAdd}}">
-      </div>
-    </div>
+
+  <div class="img-block">
+    <img ng-src="{{steps.statusAdd}}">
   </div>
 
 </div>

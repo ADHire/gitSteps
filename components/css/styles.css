@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'brandon';
+  src: url('hvd_fonts_-_brandongrotesque-black.woff2');
+}
+
+body, a {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+}
+
+samp, kbd {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+kbd {
+  font-weight: bold;
+  color: #f16739;
+}
+
+.git-content {
+  margin: 40px auto 0 auto;
+  width: 90%;
+}
+
+samp {
+  font-weight: bold;
+  color: #33cccc;
+}
+
+.main-container {
+  background-color: #373f48;
+}
+
+.main-container header h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "brandon", "Arial Black", Helvetica, sans-serif;
+}
+
+.main-container .nav-container ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.main-container .nav-container ul li {
+  list-style: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.commands p {
+  color: #ffffff;
+}
+
+.commands p, .commands ul {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px;
+}
+
+.samp {
+  display: block;
+}
+
+.img-block {
+  background-color: #22282b;
+  display: flex;
+  justify-content: center;
+}
+
+.img-block img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+main {
+  background-color: #2a3238;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+  .git-content div img {
+    width: 100%;
+  }
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}

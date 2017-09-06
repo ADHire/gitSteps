@@ -1,51 +1,27 @@
-<div class="container-fluid">
+<div class="git-content">
 
-  <div class="row">
-    <div class="col-xs-6">
-      <p>Once </kbd>git init</kbd> has been ran, you may have noticed there is an invisible folder in the directory now called <u>.git</u>. This folder will track this project's changes. We will talk about that later...</p>
+  <main>
+    <div>
+      <p>Once </kbd>git init</kbd> has been ran, you may have noticed there is an invisible folder in the directory now called <b>.git</b>. This folder will track this project's changes. We will talk about that later...</p>
 
       <p>The next step, and one that we constantly will be doing, is to check the status of this local repository. To do this, we will use the command: <kbd>git status</kbd>.</p>
 
       <p>When running this command, the terminal will give some output. It will say: <samp>Untracked Files:</samp> and list some files in a <span class="text-danger">red</span> or <span class="text-success">green</span> font color. We will touch on the details at a later time. The biggest thing to notice is that all of the files within your directory should be listed here and gives you another hint on what to do next...<samp>nothing added to commit but untracked files present (use "git add" to track)</samp></p>
 
-      <p>In order for <b>Git</b> to allow us to commit or push these files, we need to add them to tracking. That is our next step!</p>
+      <p>In order for Git to allow us to commit or push these files, we need to add them to tracking. That is our next step!</p>
     </div>
-    <div class="col-xs-6">
-      <img class="img-responsive pop-modal" ng-src="{{steps.statusBefore}}">
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-6 commands">
+    <div class="commands">
       <p>Commands used so far:</p>
       <ul>
         <li><kbd>git init</kdb></li>
         <li><kbd>git status</kdb></li>
       </ul>
     </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="previous"><a href="#!/init">Step 1</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
+  </main>
 
-          <li class="next"><a href="#!/add">Step 3</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-
-  <div class="modal fade img-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <img ng-src="{{steps.statusBefore}}">
-      </div>
-    </div>
+  <div class="img-block">
+    <img ng-src="{{steps.statusBefore}}">
   </div>
 
 </div>

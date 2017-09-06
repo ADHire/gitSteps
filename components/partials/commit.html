@@ -1,10 +1,10 @@
-<div class="container-fluid">
+<div class="git-content">
 
-  <div class="row">
-    <div class="col-xs-6">
+  <main>
+    <div>
       <p>Once again, the first thing we will do is check our repository's status. I know we have checked the status quite a bit so far, but it is always better to know what is going on than be left guessing.</p>
 
-      <p>Notice upon checking the status, we get a message that says: <samp>On branch master</samp> followed by: <samp>Initial Commit</samp> and then: <samp>Changes to be commited:...</samp>. <b>Git</b> is always giving us hints for what we need to do next. Since we don't want to remove the files we have added to the staging area, let's skip to actually making our first commit!</p>
+      <p>Notice upon checking the status, we get a message that says: <samp>On branch master</samp> followed by: <samp>Initial Commit</samp> and then: <samp>Changes to be commited:...</samp><b>Git</b> is always giving us hints for what we need to do next. Since we don't want to remove the files we have added to the staging area, let's skip to actually making our first commit!</p>
 
       <p>In order to commit our changes, we need to run the command: <kbd>git commit -m "Some message"</kbd>. It is important to remember we need to add the </kbd>-m</kbd> flag and then a message in quotations. In this example, we ran <kbd>git commit -m "first commit"</kbd>, which creates a commit titled <em>'first commit'</em>. If successful, you should get some response that files were changed and some modes were created.</p>
 
@@ -12,13 +12,8 @@
 
       <p>Note: if you run <kbd>git status</kbd> right now, it will say: <samp>On branch master, nothing to commit, working directory clean</kbd>.</p>
     </div>
-    <div class="col-xs-6">
-      <img class="img-responsive pop-modal" ng-src="{{steps.gitCommit}}">
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-6 commands">
+    <div class="commands">
       <p>Commands used so far:</p>
       <ul>
         <li><kbd>git init</kdb></li>
@@ -27,28 +22,10 @@
         <li><kbd>git commit</kdb></li>
       </ul>
     </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="previous"><a href="#!/add">Step 3</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-xs-3">
-      <nav aria-label="...">
-        <ul class="pager">
-          <li class="next"><a href="#!/repo">Step 5</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
 
-  <div class="modal fade img-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <img ng-src="{{steps.gitCommit}}">
-      </div>
+    <div class="img-block">
+      <img ng-src="{{steps.gitCommit}}">
     </div>
-  </div>
+  </main>
 
 </div>
