@@ -1,11 +1,31 @@
 @font-face {
   font-family: 'brandon';
-  src: url('hvd_fonts_-_brandongrotesque-black.woff2');
+  src: url('../fonts/hvd_fonts_-_brandongrotesque-black.woff2');
+}
+
+body {
+  background-color: #373f48;
+}
+
+.split-nav-container {
+  display: none;
 }
 
 body, a {
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
+}
+
+a:hover {
+  color: #33cccc;
+}
+
+a:active {
+  color: #33cccc;
+}
+
+.visited {
+  color: #33cccc;
 }
 
 samp, kbd {
@@ -28,37 +48,48 @@ samp {
 }
 
 .main-container {
-  background-color: #373f48;
+  height: 100%;
 }
 
 .main-container header h2 {
+  padding-top: 15px;
   text-align: center;
   font-size: 40px;
   font-family: "brandon", "Arial Black", Helvetica, sans-serif;
-}
-
-.main-container .nav-container ul {
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 li {
   list-style: none;
 }
 
-.main-container .nav-container ul li {
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-container ul {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.nav-container ul li {
   list-style: none;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  width: 100%;
 }
 
 .commands p {
   color: #ffffff;
 }
 
-.commands p, .commands ul {
+main div p {
+  padding: 5px;
+}
+
+.commands p, .commands ul, .lists {
   margin: 0 auto;
   text-align: center;
   padding: 0px;
@@ -68,42 +99,106 @@ li {
   display: block;
 }
 
-.img-block {
-  background-color: #22282b;
-  display: flex;
-  justify-content: center;
-}
-
-.img-block img {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 90%;
-}
-
 main {
   background-color: #2a3238;
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
+.img-block {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  background-color: #373f48;
+}
 
-  .git-content div img {
-    width: 100%;
+.btn {
+  font-size: 0.6rem;
+}
+
+.git-content div img {
+  width: 100%;
+}
+
+.commands ul li {
+  display: inline-block;
+}
+
+.lists li {
+  display: inline-block;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+  .nav-container {
+    display: none;
+  }
+
+  .split-nav-container ul li a {
+    font-size: 14px;
+  }
+
+  .split-nav-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-block .img-responsive {
+    max-width: 80%;
   }
 
 }
 
+@media only screen and (min-width: 992px) {
 
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
+  .img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-block .img-responsive {
+    max-width: 70%;
+  }
+
 }
-
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-}
-
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+
+  .img-block {
+    width: 50%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-block .img-responsive {
+    max-width: 90%;
+  }
+
+  .git-content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  main {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 1700px) {
+
+  .img-block .img-responsive {
+    max-width: 550px;
+    max-height: 441px;
+  }
+
 }

@@ -1,6 +1,7 @@
-var app = angular.module('gitMod', ['ngRoute', 'ngAnimate']);
+var app = angular.module('gitMod', ['ngRoute']);
 
 app.config(function($routeProvider) {
+
   $routeProvider
     .when('/', {
       controller: 'ultimateController',
