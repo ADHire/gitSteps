@@ -11,6 +11,13 @@ body {
   display: none;
 }
 
+.guide-desc {
+  margin: 30px auto;
+  width: 50%;
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+
 body, a {
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
