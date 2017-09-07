@@ -192,6 +192,11 @@ main {
     width: 50%;
   }
 
+  .changes {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 @media only screen and (min-width: 1700px) {
