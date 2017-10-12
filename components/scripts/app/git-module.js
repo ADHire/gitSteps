@@ -7,6 +7,10 @@ app.config(function($routeProvider) {
       controller: 'ultimateController',
       templateUrl: './components/partials/home.html'
     })
+    .when('/cmd-line', {
+      controller: 'ultimateController',
+      templateUrl: './components/partials/cmd-line.html'
+    })
     .when('/init', {
       controller: 'ultimateController',
       templateUrl: './components/partials/init.html'

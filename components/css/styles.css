@@ -102,6 +102,10 @@ main div p {
   padding: 0px;
 }
 
+.git-content .cmd-line {
+	margin: 0 auto;
+}
+
 .samp {
   display: block;
 }
